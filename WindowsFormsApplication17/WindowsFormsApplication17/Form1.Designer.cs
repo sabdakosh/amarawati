@@ -35,6 +35,10 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.metroTile7 = new MetroFramework.Controls.MetroTile();
+            this.metroTile8 = new MetroFramework.Controls.MetroTile();
+            this.metroTile6 = new MetroFramework.Controls.MetroTile();
+            this.metroTile5 = new MetroFramework.Controls.MetroTile();
             this.outparty_menu = new System.Windows.Forms.Panel();
             this.outpartyledger_table = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,9 +62,6 @@
             this.metroTile10 = new MetroFramework.Controls.MetroTile();
             this.metroTile12 = new MetroFramework.Controls.MetroTile();
             this.metroTile13 = new MetroFramework.Controls.MetroTile();
-            this.metroTile7 = new MetroFramework.Controls.MetroTile();
-            this.metroTile6 = new MetroFramework.Controls.MetroTile();
-            this.metroTile5 = new MetroFramework.Controls.MetroTile();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.metroTile4 = new MetroFramework.Controls.MetroTile();
             this.metroTile3 = new MetroFramework.Controls.MetroTile();
@@ -91,23 +92,15 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.metroTile8 = new MetroFramework.Controls.MetroTile();
             this.activity_menu = new System.Windows.Forms.Panel();
-            this.metroTile14 = new MetroFramework.Controls.MetroTile();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.metroTile14 = new MetroFramework.Controls.MetroTile();
             this.office_menu = new System.Windows.Forms.Panel();
-            this.metroTile15 = new MetroFramework.Controls.MetroTile();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -122,6 +115,13 @@
             this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.metroTile15 = new MetroFramework.Controls.MetroTile();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -135,11 +135,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.ledger_table)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.member_table)).BeginInit();
             this.activity_menu.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.office_menu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // metroButton1
@@ -221,6 +221,62 @@
             this.panel2.Size = new System.Drawing.Size(1236, 525);
             this.panel2.TabIndex = 3;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // metroTile7
+            // 
+            this.metroTile7.ActiveControl = null;
+            this.metroTile7.Location = new System.Drawing.Point(191, 318);
+            this.metroTile7.Name = "metroTile7";
+            this.metroTile7.Size = new System.Drawing.Size(115, 84);
+            this.metroTile7.TabIndex = 0;
+            this.metroTile7.Text = "Office";
+            this.metroTile7.TileImage = global::WindowsFormsApplication17.Properties.Resources.appbar_location;
+            this.metroTile7.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile7.UseSelectable = true;
+            this.metroTile7.UseTileImage = true;
+            this.metroTile7.Click += new System.EventHandler(this.metroTile7_Click);
+            // 
+            // metroTile8
+            // 
+            this.metroTile8.ActiveControl = null;
+            this.metroTile8.Location = new System.Drawing.Point(326, 209);
+            this.metroTile8.Name = "metroTile8";
+            this.metroTile8.Size = new System.Drawing.Size(120, 84);
+            this.metroTile8.TabIndex = 0;
+            this.metroTile8.Text = "OutParty";
+            this.metroTile8.TileImage = global::WindowsFormsApplication17.Properties.Resources.appbar_zune;
+            this.metroTile8.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile8.UseSelectable = true;
+            this.metroTile8.UseTileImage = true;
+            this.metroTile8.Click += new System.EventHandler(this.metroTile8_Click_1);
+            // 
+            // metroTile6
+            // 
+            this.metroTile6.ActiveControl = null;
+            this.metroTile6.Location = new System.Drawing.Point(191, 209);
+            this.metroTile6.Name = "metroTile6";
+            this.metroTile6.Size = new System.Drawing.Size(115, 84);
+            this.metroTile6.TabIndex = 0;
+            this.metroTile6.Text = "Activities";
+            this.metroTile6.TileImage = global::WindowsFormsApplication17.Properties.Resources.appbar_people_profile;
+            this.metroTile6.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile6.UseSelectable = true;
+            this.metroTile6.UseTileImage = true;
+            this.metroTile6.Click += new System.EventHandler(this.metroTile6_Click);
+            // 
+            // metroTile5
+            // 
+            this.metroTile5.ActiveControl = null;
+            this.metroTile5.Location = new System.Drawing.Point(191, 80);
+            this.metroTile5.Name = "metroTile5";
+            this.metroTile5.Size = new System.Drawing.Size(255, 112);
+            this.metroTile5.TabIndex = 0;
+            this.metroTile5.Text = "Member";
+            this.metroTile5.TileImage = global::WindowsFormsApplication17.Properties.Resources.appbar_user_tie;
+            this.metroTile5.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile5.UseSelectable = true;
+            this.metroTile5.UseTileImage = true;
+            this.metroTile5.Click += new System.EventHandler(this.metroTile5_Click);
             // 
             // outparty_menu
             // 
@@ -402,48 +458,6 @@
             this.metroTile13.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile13.UseSelectable = true;
             this.metroTile13.UseTileImage = true;
-            // 
-            // metroTile7
-            // 
-            this.metroTile7.ActiveControl = null;
-            this.metroTile7.Location = new System.Drawing.Point(191, 318);
-            this.metroTile7.Name = "metroTile7";
-            this.metroTile7.Size = new System.Drawing.Size(115, 84);
-            this.metroTile7.TabIndex = 0;
-            this.metroTile7.Text = "Office";
-            this.metroTile7.TileImage = global::WindowsFormsApplication17.Properties.Resources.appbar_location;
-            this.metroTile7.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile7.UseSelectable = true;
-            this.metroTile7.UseTileImage = true;
-            this.metroTile7.Click += new System.EventHandler(this.metroTile7_Click);
-            // 
-            // metroTile6
-            // 
-            this.metroTile6.ActiveControl = null;
-            this.metroTile6.Location = new System.Drawing.Point(191, 209);
-            this.metroTile6.Name = "metroTile6";
-            this.metroTile6.Size = new System.Drawing.Size(115, 84);
-            this.metroTile6.TabIndex = 0;
-            this.metroTile6.Text = "Activities";
-            this.metroTile6.TileImage = global::WindowsFormsApplication17.Properties.Resources.appbar_people_profile;
-            this.metroTile6.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile6.UseSelectable = true;
-            this.metroTile6.UseTileImage = true;
-            this.metroTile6.Click += new System.EventHandler(this.metroTile6_Click);
-            // 
-            // metroTile5
-            // 
-            this.metroTile5.ActiveControl = null;
-            this.metroTile5.Location = new System.Drawing.Point(191, 80);
-            this.metroTile5.Name = "metroTile5";
-            this.metroTile5.Size = new System.Drawing.Size(255, 112);
-            this.metroTile5.TabIndex = 0;
-            this.metroTile5.Text = "Member";
-            this.metroTile5.TileImage = global::WindowsFormsApplication17.Properties.Resources.appbar_user_tie;
-            this.metroTile5.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile5.UseSelectable = true;
-            this.metroTile5.UseTileImage = true;
-            this.metroTile5.Click += new System.EventHandler(this.metroTile5_Click);
             // 
             // pictureBox2
             // 
@@ -693,20 +707,6 @@
             this.Column5.HeaderText = "email";
             this.Column5.Name = "Column5";
             // 
-            // metroTile8
-            // 
-            this.metroTile8.ActiveControl = null;
-            this.metroTile8.Location = new System.Drawing.Point(326, 209);
-            this.metroTile8.Name = "metroTile8";
-            this.metroTile8.Size = new System.Drawing.Size(120, 84);
-            this.metroTile8.TabIndex = 0;
-            this.metroTile8.Text = "OutParty";
-            this.metroTile8.TileImage = global::WindowsFormsApplication17.Properties.Resources.appbar_zune;
-            this.metroTile8.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile8.UseSelectable = true;
-            this.metroTile8.UseTileImage = true;
-            this.metroTile8.Click += new System.EventHandler(this.metroTile8_Click_1);
-            // 
             // activity_menu
             // 
             this.activity_menu.Controls.Add(this.groupBox4);
@@ -714,10 +714,66 @@
             this.activity_menu.Controls.Add(this.button2);
             this.activity_menu.Controls.Add(this.button1);
             this.activity_menu.Controls.Add(this.metroTile14);
-            this.activity_menu.Location = new System.Drawing.Point(261, 31);
+            this.activity_menu.Location = new System.Drawing.Point(51, 35);
             this.activity_menu.Name = "activity_menu";
             this.activity_menu.Size = new System.Drawing.Size(739, 469);
             this.activity_menu.TabIndex = 1;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.textBox1);
+            this.groupBox4.Location = new System.Drawing.Point(304, 44);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(305, 262);
+            this.groupBox4.TabIndex = 4;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "type notice";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(10, 28);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(280, 228);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label1);
+            this.groupBox3.Location = new System.Drawing.Point(24, 157);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(238, 262);
+            this.groupBox3.TabIndex = 4;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "activities";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 41);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "news here";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(438, 348);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 36);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "send";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(554, 348);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 36);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "send to group";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // metroTile14
             // 
@@ -733,61 +789,6 @@
             this.metroTile14.UseTileImage = true;
             this.metroTile14.Click += new System.EventHandler(this.metroTile6_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(10, 28);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(280, 228);
-            this.textBox1.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(554, 348);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 36);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "send to group";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "news here";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.label1);
-            this.groupBox3.Location = new System.Drawing.Point(24, 157);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(238, 262);
-            this.groupBox3.TabIndex = 4;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "activities";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.textBox1);
-            this.groupBox4.Location = new System.Drawing.Point(304, 44);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(305, 262);
-            this.groupBox4.TabIndex = 4;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "type notice";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(438, 348);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 36);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "send";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // office_menu
             // 
             this.office_menu.Controls.Add(this.dataGridView2);
@@ -797,59 +798,6 @@
             this.office_menu.Name = "office_menu";
             this.office_menu.Size = new System.Drawing.Size(1179, 528);
             this.office_menu.TabIndex = 7;
-            // 
-            // metroTile15
-            // 
-            this.metroTile15.ActiveControl = null;
-            this.metroTile15.Location = new System.Drawing.Point(30, 20);
-            this.metroTile15.Name = "metroTile15";
-            this.metroTile15.Size = new System.Drawing.Size(192, 84);
-            this.metroTile15.TabIndex = 0;
-            this.metroTile15.Text = "Office";
-            this.metroTile15.TileImage = global::WindowsFormsApplication17.Properties.Resources.appbar_location;
-            this.metroTile15.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile15.UseSelectable = true;
-            this.metroTile15.UseTileImage = true;
-            this.metroTile15.Click += new System.EventHandler(this.metroTile7_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewTextBoxColumn14,
-            this.dataGridViewTextBoxColumn15});
-            this.dataGridView1.Location = new System.Drawing.Point(314, 10);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(558, 227);
-            this.dataGridView1.TabIndex = 3;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.HeaderText = "s.n";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.HeaderText = "id";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.HeaderText = "party name";
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.HeaderText = "task";
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.HeaderText = "phone";
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
             // 
             // dataGridView2
             // 
@@ -939,6 +887,59 @@
             this.dataGridViewTextBoxColumn28.HeaderText = "email";
             this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn15});
+            this.dataGridView1.Location = new System.Drawing.Point(314, 10);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(558, 227);
+            this.dataGridView1.TabIndex = 3;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.HeaderText = "s.n";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.HeaderText = "id";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.HeaderText = "party name";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.HeaderText = "task";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.HeaderText = "phone";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            // 
+            // metroTile15
+            // 
+            this.metroTile15.ActiveControl = null;
+            this.metroTile15.Location = new System.Drawing.Point(30, 20);
+            this.metroTile15.Name = "metroTile15";
+            this.metroTile15.Size = new System.Drawing.Size(192, 84);
+            this.metroTile15.TabIndex = 0;
+            this.metroTile15.Text = "Office";
+            this.metroTile15.TileImage = global::WindowsFormsApplication17.Properties.Resources.appbar_location;
+            this.metroTile15.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile15.UseSelectable = true;
+            this.metroTile15.UseTileImage = true;
+            this.metroTile15.Click += new System.EventHandler(this.metroTile7_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -969,13 +970,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.ledger_table)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.member_table)).EndInit();
             this.activity_menu.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.office_menu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }

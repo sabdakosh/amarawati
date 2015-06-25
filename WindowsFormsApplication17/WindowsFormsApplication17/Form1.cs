@@ -122,5 +122,10 @@ namespace WindowsFormsApplication17
             ledger_table.Hide();
             member_table.Show();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
