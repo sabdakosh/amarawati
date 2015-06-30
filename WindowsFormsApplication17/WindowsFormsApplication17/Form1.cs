@@ -127,5 +127,11 @@ namespace WindowsFormsApplication17
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            email aa = new email();
+            aa.sendEmail("asdfasdf");
+        }
     }
 }
