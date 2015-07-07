@@ -26,10 +26,10 @@ namespace WindowsFormsApplication17
             member_table.Hide();
             ledger_table.Hide();
             panel2.Hide();
-           pictureBox2.Hide();
-           metroTile9.Hide();
-           member_menu.Hide();
-           office_menu.Hide();
+            pictureBox2.Hide();
+            metroTile9.Hide();
+            member_menu.Hide();
+            office_menu.Hide();
 
         }
 
@@ -53,7 +53,7 @@ namespace WindowsFormsApplication17
 
         private void metroTile9_Click(object sender, EventArgs e)
         {
-           
+
             panel1.Show();
             panel2.Hide();
             pictureBox1.Show();
@@ -88,8 +88,18 @@ namespace WindowsFormsApplication17
         {
             activity_menu.Show();
             panel2.Hide();
-        }
 
+            //for rectangle in picture box
+
+            Size gridSize = new Size(emailFormating.Width / 3, emailFormating.Height);
+
+            int x = emailFormating.Width, y = emailFormating.Height;
+            label1.Text = y.ToString();
+            grids.Add(new Grid(new Point(0, 0), gridSize, "ONE"));
+            grids.Add(new Grid(new Point(x / 3, 0), gridSize, "TWO"));
+            grids.Add(new Grid(new Point((2 * x) / 3, 0), gridSize, "THREE"));
+        }
+        List<Grid> grids = new List<Grid>();
         private void metroTile12_Click(object sender, EventArgs e)
         {
             outparty_table.Hide();
@@ -101,11 +111,11 @@ namespace WindowsFormsApplication17
 
         }
 
-       
+
 
         private void metroTile8_Click_1(object sender, EventArgs e)
         {
-            
+
             outparty_menu.Show();
             panel2.Hide();
             activity_menu.Hide();
@@ -131,7 +141,32 @@ namespace WindowsFormsApplication17
         private void button2_Click(object sender, EventArgs e)
         {
             email aa = new email();
-            aa.sendEmail("asdfasdf");
+            if (String.IsNullOrEmpty(messageBox.Text))
+                MessageBox.Show("Messages is empty");
+            else
+                MessageBox.Show( aa.sendEmail(messageBox.Text,openFileDialog1.FileName.ToString()));
+        }
+
+        private void emailFormating_MouseMove(object sender, MouseEventArgs e)
+        {
+            /*get location of mouse
+            Point mouse = new Point(e.X, e.Y);
+            //search grids to find one the one containing the mouses location
+            Grid CurrentGrid = grids.Find(delegate(Grid g) { return g.Rectangle.Contains(mouse) == true; });
+            if (CurrentGrid != null)
+                //print grid name to a label
+               
+                messageBox.Text = CurrentGrid.GridName + e.X.ToString();*/
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if(openFileDialog1.ShowDialog()==DialogResult.OK)
+            {
+                MessageBox.Show(openFileDialog1.FileName.ToString());
+            }
+            
         }
     }
+
 }
