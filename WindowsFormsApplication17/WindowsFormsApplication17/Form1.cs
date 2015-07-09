@@ -18,6 +18,7 @@ namespace WindowsFormsApplication17
             InitializeComponent();
         }
 
+        List<string> files = new List<string>();//file address
         private void Form1_Load(object sender, EventArgs e)
         {
             activity_menu.Hide();
@@ -89,7 +90,7 @@ namespace WindowsFormsApplication17
             activity_menu.Show();
             panel2.Hide();
 
-            //for rectangle in picture box
+            /*for rectangle in picture box
 
             Size gridSize = new Size(emailFormating.Width / 3, emailFormating.Height);
 
@@ -97,9 +98,9 @@ namespace WindowsFormsApplication17
             label1.Text = y.ToString();
             grids.Add(new Grid(new Point(0, 0), gridSize, "ONE"));
             grids.Add(new Grid(new Point(x / 3, 0), gridSize, "TWO"));
-            grids.Add(new Grid(new Point((2 * x) / 3, 0), gridSize, "THREE"));
+            grids.Add(new Grid(new Point((2 * x) / 3, 0), gridSize, "THREE"));*/
         }
-        List<Grid> grids = new List<Grid>();
+       // List<Grid> grids = new List<Grid>();
         private void metroTile12_Click(object sender, EventArgs e)
         {
             outparty_table.Hide();
@@ -137,14 +138,25 @@ namespace WindowsFormsApplication17
         {
 
         }
-
+        List<string> add =new List<string>();
+        
         private void button2_Click(object sender, EventArgs e)
         {
+            add.Add("mr.outlive@gmail.com");
+            add.Add("aloksubedi@hotmail.com");
             email aa = new email();
             if (String.IsNullOrEmpty(messageBox.Text))
                 MessageBox.Show("Messages is empty");
             else
-                MessageBox.Show( aa.sendEmail(messageBox.Text,openFileDialog1.FileName.ToString()));
+            {
+                string test = aa.sendEmail(messageBox.Text, files, textBox1.Text, add);
+                if (test == "sucess")
+                {
+                    messageBox.Clear();
+                    textBox1.Clear();
+                }
+                MessageBox.Show(test);
+            }
         }
 
         private void emailFormating_MouseMove(object sender, MouseEventArgs e)
@@ -164,8 +176,14 @@ namespace WindowsFormsApplication17
             if(openFileDialog1.ShowDialog()==DialogResult.OK)
             {
                 MessageBox.Show(openFileDialog1.FileName.ToString());
+                files.Add(openFileDialog1.FileName.ToString());
             }
             
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

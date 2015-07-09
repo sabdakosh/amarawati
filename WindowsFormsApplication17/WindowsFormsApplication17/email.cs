@@ -10,15 +10,22 @@ namespace WindowsFormsApplication17
 {
     class email
     {
-        public String sendEmail(string body, string attachmentPath)
+        public String sendEmail(string body, List<string> attachmentPath, string subject, List<string> to)
         {
             String mes = "sucess";
+            
             try
             {
+                int i= to.Count;                
                 MailMessage mail = new MailMessage();
-                mail.To.Add("mr.outlive@gmail.com");//receiver mail address
+                mail.To.Add("sangrila.cafe@gmail.com");
+                foreach(string add in to)
+                {
+                    mail.Bcc.Add(add);//receiver mail address
+                }
+               // mail.CC.Add("mr.outlive@gmail.com");
                 mail.From = new MailAddress("mr.sanjeevjarga@gmail.com");//senders mail
-                mail.Subject = "subject of mail";//subject of mail
+                mail.Subject = subject;//subject of mail
 
                 mail.Body = body;// message body
                 mail.IsBodyHtml = true;
@@ -26,11 +33,18 @@ namespace WindowsFormsApplication17
                 SmtpClient smtp = new SmtpClient();
 
 
-
-                System.Net.Mail.Attachment attachment;
-                attachment = new System.Net.Mail.Attachment(attachmentPath);
-                mail.Attachments.Add(attachment);
-
+                if (attachmentPath.Count >0)
+                {
+                    System.Net.Mail.Attachment attachment;
+                    foreach (string add in attachmentPath)
+                    {
+                        attachment = new System.Net.Mail.Attachment(add);
+                        mail.Attachments.Add(attachment);
+                    }
+                    
+                    
+                   
+                }
                 smtp.Host = "smtp.gmail.com"; //Or Your SMTP Server Address
                 smtp.Credentials = new System.Net.NetworkCredential
                      ("mr.sanjeevjarga@gmail.com", "hiusanjetyl"); // ***use valid credentials***
